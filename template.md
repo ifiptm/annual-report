@@ -1,38 +1,50 @@
-<table>
-    <tr>
-        <td rowspan=2>IFIP logo</td>
-        <th>International Federation for Information Processing</th>
-    </tr>
-    <tr>
-       <th>TC-11 Security and Privacy Protection in Information Processing Systems</th>
-    </tr>
-</table>
+---
+# Metadata: see https://pandoc.org/MANUAL.html#metadata-variables
+title: |
+       | Yearly report: 20xx--20yy
+       | Trust Management
+author:
+  - Author 1
+  - Author 2
+  - Author 3
+  - Author 4
+subject: Working Group Annual Report
+description: Annual report of the IFIP Working Group 11.11 on Trust Management
+abstract: If an abstract is necessary at all.
+date: Insert date, if necessary
+lang: en-GB
+# LaTeX-specific configuration
+geometry:
+  - margin=25mm
+papersize: a4paper
+# Specify a sans-serif font to match the expected style of the TC11
+fontfamily: roboto  
+fontfamilyoptions: sfdefault
+---
 
-# Yearly report: 20XX--20XX<br/>WG 11.11 on Trust Management
+# Current information on WG
 
-## Current information on WG
+## Officers
+### WG Internal Officers
 
-### Officers
-#### WG Internal Officers
+## Website
 
-### Website
+## Events
 
-### Events
+### Report on WG meetings
 
-#### Report on WG meetings
+### Conferences
 
-#### Conferences
+### Other events
 
-#### Other events
+## Publications
 
-### Publications
+## Membership
 
-### Membership
+## Other issues
 
-### Other issues
+### Award
 
-#### Award
+### Elections
 
-#### Elections
-
-### Appendix: membership list
+## Appendix: membership list
