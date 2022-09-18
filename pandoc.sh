@@ -1,4 +1,4 @@
 # Pandoc invocation with the necessary arguments to compile the template data
 
 # LaTeX-based PDF generation
-pandoc -s --template=latex-template.tex --from=markdown --template=templates/latex-template.tex template.md -o template.pdf
+pandoc --standalone --from=markdown --template=pandoc-templates/latex-template.tex --output=template.pdf template.md

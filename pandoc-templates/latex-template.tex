@@ -447,16 +447,20 @@ $endif$
 \setlength{\headheight}{3em}
 \usepackage{graphicx}
 \usepackage{multirow}
+\usepackage[export]{adjustbox}
 
 \pagestyle{fancy}
-\thispagestyle{fancy}
 
 \renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headsep}{15mm}
+\setlength{\footskip}{15mm}
 
 \fancyhf{}
-\chead{{\large \bgroup \def\arraystretch{1.5} \begin{tabular}{| c | c |}\hline \multirow{3}{*}{\includegraphics[width=1cm]{logo.png}} & \color[RGB]{1,0,123}{\textbf{International Federation for Information Processing}} \\ \cline{2-2} & \color[RGB]{117,20,12}{\Large \textbf{TC-11}} \vspace{-0.5em}\\ & \color[RGB]{117,20,12}{\textbf{Security and Privacy Protection in Information Processing Systems}} \\ \hline\end{tabular} \egroup}}
-\lfoot{\small IFIP WG 11.11 Trust Management}
-\rfoot{\small \thepage}
+\chead{{\bgroup \def\arraystretch{1.5} \begin{tabular}{| c | c |}\hline \multirow{3}{*}{\includegraphics[width=2cm,valign=c]{images/logo_ifip.png}} & \color[RGB]{1,0,123}{\textbf{International Federation for Information Processing}} \\ \cline{2-2} & \color[RGB]{117,20,12}{\large \textbf{TC-11}} \vspace{-0.5em}\\ & \color[RGB]{117,20,12}{\textbf{Security and Privacy Protection in Information Processing Systems}} \\ \hline\end{tabular} \egroup}}
+\lfoot{\includegraphics[width=2cm,valign=c]{images/logo_ifiptm.png}}
+\cfoot{\footnotesize IFIP WG 11.11 Annual Report, version: v.\the\year\the\month\the\day}
+\rfoot{\footnotesize \thepage}
 
 
 
