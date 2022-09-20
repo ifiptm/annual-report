@@ -1,6 +1,16 @@
 name: Compile PDF
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      filename:
+        type: string
+        description: The name of the input Markdown file to process.
+        required: true
+      pdf:
+        type: string
+        description: The name of the output PDF file.
+        required: true
 
 jobs:
   compile_pdf:
@@ -16,12 +26,10 @@ jobs:
           tlmgr install collectbox && \
           tlmgr install ucs && \
           mkdir -p output && \
-          pandoc --template=pandoc-templates/latex-template.tex --output=output/test.pdf template.md && \
+          pandoc --template=pandoc-templates/latex-template.tex --output=output/${{ github.event.inputs.pdf }} ${{ github.event.inputs.filename }} && \
           apk add --update npm && \
-          echo "url: ${ACTIONS_RUNTIME_URL}" && \
-          echo "token: ${ACTIONS_RUNTIME_TOKEN}"
       - name: Upload output
         uses: actions/upload-artifact@v3
         with:
-          name: output
-          path: output/test.pdf
+          name: output_pdf
+          path: output/${{ github.event.inputs.pdf }}
