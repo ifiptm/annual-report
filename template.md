@@ -1,31 +1,3 @@
----
-# Metadata: see https://pandoc.org/MANUAL.html#metadata-variables
-title: |
-       | Yearly report: 20xx--20yy
-       | Trust Management
-author:
-  - Author 1
-  - Author 2
-  - Author 3
-  - Author 4
-subject: Working Group Annual Report
-description: Annual report of the IFIP Working Group 11.11 on Trust Management
-abstract: If an abstract is necessary at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in nulla non dolor placerat condimentum. Sed mollis maximus scelerisque. Nam finibus velit ac metus aliquam, eget volutpat risus hendrerit. Maecenas nunc nulla, aliquam ac tincidunt non, finibus et augue.
-date: 20XX-Jun-1
-lang: en-GB
-# LaTeX-specific configuration
-geometry:
-  - left=35mm
-  - right=35mm
-  - top=30mm
-  - bottom=40mm
-papersize: a4paper
-# Specify a sans-serif font to match the expected style of the TC11
-# fontfamily: roboto  
-# fontfamilyoptions: sfdefault
-fontsize: 10
----
-
 # Current information on WG
 
 ## Officers
