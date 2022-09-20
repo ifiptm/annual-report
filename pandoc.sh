@@ -6,5 +6,5 @@ pandoc \
   --from=markdown \
   --template=pandoc-templates/latex-template.tex \
   --metadata-file=metadata.yml \
-  --output=output/template.pdf \
-  template.md
+  --output=output/report.pdf \
+  report.md
