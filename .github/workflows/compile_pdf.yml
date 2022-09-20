@@ -5,7 +5,7 @@ on:
     inputs:
       filename:
         type: string
-        default: 'report'
+        default: 'template'
         description: The name of the input Markdown file to process, relative to the root of the repository, without the extension. (The output PDF will have the same name.)
         required: true
 jobs:
