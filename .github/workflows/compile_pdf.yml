@@ -27,7 +27,7 @@ jobs:
           tlmgr install ucs && \
           mkdir -p output && \
           pandoc --template=pandoc-templates/latex-template.tex --output=output/${{ github.event.inputs.pdf }} ${{ github.event.inputs.filename }} && \
-          apk add --update npm && \
+          apk add --update npm
       - name: Upload output
         uses: actions/upload-artifact@v3
         with:
