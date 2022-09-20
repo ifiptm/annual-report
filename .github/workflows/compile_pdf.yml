@@ -1,0 +1,26 @@
+name: Compile PDF
+
+on: workflow_dispatch
+
+jobs:
+  compile_pdf:
+    runs-on: ubuntu-latest
+    container:
+      image: pandoc/latex:latest
+    steps:
+      - name: Copy content from repository
+        uses: actions/checkout@v3
+      - name: Compile PDF
+        run: |
+          tlmgr install adjustbox;
+          tlmgr install collectbox;
+          tlmgr install ucs;
+          mkdir -p output;
+          pandoc --template=pandoc-templates/latex-template.tex --output=output/test.pdf template.md;
+          ls -la output/test.pdf;
+          apk add --update npm;
+      - name: Download output
+        uses: actions/download-artifact@v3
+        with:
+          name: output
+          path: output/test.pdf
