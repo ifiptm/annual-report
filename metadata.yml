@@ -19,7 +19,4 @@ geometry:
   - top=30mm
   - bottom=40mm
 papersize: a4paper
-# Specify a sans-serif font to match the expected style of the TC11
-# fontfamily: roboto
-# fontfamilyoptions: sfdefault
 fontsize: 10
