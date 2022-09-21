@@ -1,3 +1,5 @@
+[![Compile PDF](https://github.com/ifiptm/annual-report/actions/workflows/compile_pdf.yml/badge.svg)](https://github.com/ifiptm/annual-report/actions/workflows/compile_pdf.yml)
+
 # IFIP WG 11.11 Trust Management Annual Report
 
 This repository contains the annual report of the Working Group. All the content of the annual report should be written in a Github flavour Markdown while Pandoc is used to compile it to a deliverable PDF. The metadata about the report should be written in the `metadata.yml` file.
