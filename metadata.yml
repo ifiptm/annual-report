@@ -1,16 +1,15 @@
 # Metadata: see https://pandoc.org/MANUAL.html#metadata-variables and https://pandoc.org/MANUAL.html#option--metadata-file
 title: |
-       | Yearly report: 20xx--20yy
+       | Yearly report: 2022--2023
        | Trust Management
 author:
-  - Author 1
-  - Author 2
-  - Author 3
-  - Author 4
+  - Christian Damsgaard Jensen
+  - Davide Ceolin
+  - Tim Muller
+  - Anirban Basu
 subject: Working Group Annual Report
 description: Annual report of the IFIP Working Group 11.11 on Trust Management
-abstract: If an abstract is necessary at all. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in nulla non dolor placerat condimentum. Sed mollis maximus scelerisque. Nam finibus velit ac metus aliquam, eget volutpat risus hendrerit. Maecenas nunc nulla, aliquam ac tincidunt non, finibus et augue.
-date: 20XX-Jun-1
+date: 2023-Sep-1
 lang: en-GB
 # LaTeX-specific configuration
 geometry:
